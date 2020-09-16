@@ -1,0 +1,159 @@
+@media screen and (max-width: 2000px){
+.container 
+{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'main main mid mid right right'
+    'footer footer footer footer right right';
+    grid-row-gap: 10px ;
+    grid-column-gap:20px;
+    padding: 10px;
+    
+
+}
+
+body {
+    background: greenyellow;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color:#777;
+    padding:1rem;
+           
+}	
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+.container 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+}
+
+body {
+    background: blue;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color:#777;
+    padding:1rem;
+    
+    
+}	
+}
+
+
+	
+#headwrapper, #mainwrapper {
+    background-image: linear-gradient(#E2C1CB, #eee);
+    padding:1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+       
+}
+.item {
+    border:black thin dashed;
+    padding:1em;
+    border-radius: 1rem;
+    border-collapse:separate;
+    grid-area: header;
+    flex: auto;
+       
+   
+    
+}
+
+.item-a 
+{
+    grid-area: main;
+    border:black thin dashed;
+    padding:1em;
+    border-radius: 1rem;
+    flex:auto;
+    height: 200px;
+    width: 49;
+    
+       
+    
+    
+}
+
+.item-b
+{
+    grid-area: mid;
+    border:black thin dashed;
+    padding:1em;
+    border-radius: 1rem;
+    flex:auto;
+    height: 200px;
+    width: 49;
+    
+} 
+
+.item-c
+{
+    grid-area: right;
+    border:black thin dashed;
+    padding:1em;
+    border-radius: 1rem;
+    flex:auto;
+    
+    
+    
+}
+
+.item-d
+{
+    grid-area: footer;
+    border:black thin dashed;
+    padding:1em;
+    border-radius: 1rem;
+    flex: auto; 
+    height: 200px;
+    width: auto;
+    
+    
+    
+}
+#headwrapper .item {
+    border-radius:0; 
+}
+h1, h2 {
+    line-height:1rem;
+    padding:0;
+    margin:0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+h2 + p {
+    margin-top:0.5rem;
+}
+hr {
+    visibility: hidden;
+}
+body > p {
+    color: #E2C1CB;
+    display: block;
+    height:2rem;
+}
+body > p:hover {
+    color:#000; 
+}
+body > p a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #E2C1CB;
+}
+body > p a:hover {
+    text-decoration: none;
+    color:#FFF;
+    background: #E2C1CB;
+}
+}
